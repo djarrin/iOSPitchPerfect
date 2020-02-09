@@ -16,20 +16,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ycs-7A-wXK">
-                                <rect key="frame" x="129.5" y="397.5" width="155" height="155"/>
+                                <rect key="frame" x="129.5" y="333.5" width="155" height="155"/>
                                 <state key="normal" image="RecordButton"/>
                                 <connections>
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0cj-AX-TeA"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap To Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCy-x3-ldZ">
-                                <rect key="frame" x="152" y="575.5" width="110" height="21"/>
+                                <rect key="frame" x="152" y="511.5" width="110" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7i-8j-LoI">
-                                <rect key="frame" x="175" y="611.5" width="64" height="64"/>
+                                <rect key="frame" x="175" y="547.5" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="1nN-Bx-uNq"/>
                                     <constraint firstAttribute="width" constant="64" id="S1r-Sw-IWr"/>
@@ -42,7 +42,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Ycs-7A-wXK" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="3Dw-0g-coF"/>
+                            <constraint firstItem="Ycs-7A-wXK" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-64" id="3Dw-0g-coF"/>
                             <constraint firstItem="hCy-x3-ldZ" firstAttribute="centerX" secondItem="Ycs-7A-wXK" secondAttribute="centerX" id="3IG-Dv-zUA"/>
                             <constraint firstItem="Ycs-7A-wXK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="H4e-Bf-acs"/>
                             <constraint firstItem="hCy-x3-ldZ" firstAttribute="centerX" secondItem="Ycs-7A-wXK" secondAttribute="centerX" id="IJr-fa-NRh"/>

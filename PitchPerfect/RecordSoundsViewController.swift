@@ -21,11 +21,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         super.viewDidLoad()
         configureRecordingUI(recording: false)
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        print("viewWillAppear has been called")
-    }
 
     @IBAction func recordAudio(_ sender: Any) {
         configureRecordingUI(recording: true)
@@ -75,15 +70,9 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     func configureRecordingUI(recording: Bool) {
-        if recording {
-            recordingLabel.text = "Recording in Progress"
-            recordButton.isEnabled = false
-            stopRecordingButton.isEnabled = true
-        } else {
-            recordingLabel.text = "Tap to Record"
-            recordButton.isEnabled = true
-            stopRecordingButton.isEnabled = false
-        }
+        recordingLabel.text = recording ? "Recording in Progress" : "Tap to Record"
+        recordButton.isEnabled = !recording
+        stopRecordingButton.isEnabled = recording
     }
 }
 
